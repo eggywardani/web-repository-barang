@@ -69,15 +69,7 @@ include 'cek.php';
                             <li>
                                 <a href="stock.php"><i class="ti-dashboard"></i><span>Stock Barang</span></a>
                             </li>
-                            <li>
-                                <a href="javascript:void(0)" aria-expanded="true"><i class="ti-layout"></i><span>Transaksi Data
-                                    </span></a>
-                                <ul class="collapse">
 
-                                    <li><a href="barangmasuk.php">Barang Masuk</a></li>
-                                    <li><a href="barangkeluar.php">Barang Keluar</a></li>
-                                </ul>
-                            </li>
                             <li>
                                 <a href="logout.php"><span>Logout</span></a>
 

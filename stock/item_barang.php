@@ -112,7 +112,7 @@ if (isset($_POST['hapus'])) {
         <!-- sidebar menu area start -->
         <div class="sidebar-menu">
             <div class="sidebar-header">
-                <a href="index.php"><img src="../logo.png" alt="logo" width="100%"></a>
+                <a href="index.php"><img src="../lg.png" alt="logo" width="100%"></a>
             </div>
             <div class="main-menu">
                 <div class="menu-inner">
@@ -125,16 +125,7 @@ if (isset($_POST['hapus'])) {
                             <li>
                                 <a href="stock.php"><i class="ti-dashboard"></i><span>Stock Barang</span></a>
                             </li>
-                            <li>
-                                <a href="javascript:void(0)" aria-expanded="true"><i class="ti-layout"></i><span>Transaksi Data
-                                    </span></a>
-                                <ul class="collapse">
 
-                                    <li><a href="barangmasuk.php">Barang Masuk</a></li>
-                                    <li><a href="barangkeluar.php">Barang Keluar</a></li>
-
-                                </ul>
-                            </li>
                             <li>
                                 <a href="logout.php"><span>Logout</span></a>
 
