@@ -1,8 +1,16 @@
 <?php
 include '../dbconnect.php';
 $nama = $_POST['nama'];
-$id = uniqid("BB0");
+// $id = uniqid("KB");
 
+
+$queryItem = mysqli_query($conn, "SELECT MAX(id) as id_besar FROM item_barang");
+$data = mysqli_fetch_array($queryItem);
+$idBesar = $data['id_besar'];
+$urutan = (int) substr($idBesar, 2, 3);
+$urutan++;
+$huruf = "KB";
+$id = $huruf . sprintf("%03s", $urutan);
 
 $query = mysqli_query($conn, "INSERT INTO `item_barang` (`id`, `nama`) VALUES ('$id', '$nama');");
 
