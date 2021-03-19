@@ -51,7 +51,7 @@ include '../dbconnect.php';
                 </thead>
                 <tbody>
                     <?php
-                    $brgs = mysqli_query($conn, "SELECT * from item_barang order by nama ASC");
+                    $brgs = mysqli_query($conn, "SELECT * from item_barang order by id DESC");
                     $no = 1;
                     while ($p = mysqli_fetch_array($brgs)) {
 

@@ -248,7 +248,7 @@ if (isset($_POST['hapus'])) {
                                         <tbody>
                                             <?php
                                             $nomor = 1;
-                                            $brgs = mysqli_query($conn, "SELECT * from sstock_brg order by nama ASC");
+                                            $brgs = mysqli_query($conn, "SELECT * from sstock_brg order by idx DESC");
 
                                             while ($p = mysqli_fetch_array($brgs)) {
                                                 $idb = $p['idx'];
@@ -292,7 +292,7 @@ if (isset($_POST['hapus'])) {
                                                                             while ($data = mysqli_fetch_array($hasil)) {
                                                                                 $no++;
                                                                             ?>
-                                                                                <option value="<?= $data['id']; ?>.<?= $data['nama']; ?>"> <?= $data['id'];  ?> - <?= $data['nama']; ?></option>
+                                                                                <option value="<?= $data['id']; ?>.<?= $data['nama']; ?>" <?= ($data['id'] == $p['id_barang']) ? 'selected' : ''; ?>> <?= $data['id'];  ?> - <?= $data['nama']; ?></option>
                                                                             <?php
                                                                             }
                                                                             ?>
