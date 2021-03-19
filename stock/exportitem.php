@@ -61,7 +61,16 @@ include '../dbconnect.php';
                             <td><?php echo $no++ ?></td>
                             <td><?php echo $p['id'] ?></td>
                             <td><?php echo $p['nama'] ?></td>
-                            <td><?php echo $p['jumlah'] ?></td>
+                            <?php
+                            $idba = $p['id'];
+                            $query = mysqli_query($conn, "SELECT sum(jumlah) FROM sstock_brg WHERE id_barang = '$idba' ");
+                            $row = mysqli_fetch_row($query);
+                            if ($row[0] == null) :
+                            ?>
+                                <td>0</td>
+                            <?php else : ?>
+                                <td><?php echo $row[0]; ?></td>
+                            <?php endif; ?>
                         </tr>
                     <?php
                     }

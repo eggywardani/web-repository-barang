@@ -66,7 +66,7 @@ include '../dbconnect.php';
 
 						<tr>
 							<td><?php echo $no++ ?></td>
-							<td><?php echo $p['ids'] ?></td>
+							<td><?php echo $p['id_barang'] ?></td>
 							<td><?php echo $p['nama'] ?></td>
 							<td><?php echo $p['rak'] ?></td>
 							<td><?php echo $p['masuk'] ?></td>

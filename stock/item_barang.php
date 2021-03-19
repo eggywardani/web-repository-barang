@@ -225,9 +225,7 @@ if (isset($_POST['hapus'])) {
 
                                                 <th>No</th>
                                                 <th>Kode Barang</th>
-
                                                 <th>Nama Barang</th>
-
                                                 <th>Jumlah</th>
                                                 <th>Opsi</th>
                                             </tr>
